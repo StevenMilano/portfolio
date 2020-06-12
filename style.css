@@ -1,0 +1,7 @@
+/*Two fonts from google Fonts, Poppins for headers, and Open sans for the body */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap');
+
+img{
+	width: 50%;
+	height: 50%;
+}
