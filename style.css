@@ -1,7 +1,165 @@
 /*Two fonts from google Fonts, Poppins for headers, and Open sans for the body */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap');
 
-img{
-	width: 50%;
-	height: 50%;
+html{
+	scroll-behavior: smooth;
+}
+
+header {
+	margin: 20px 0 10px 50px;
+}
+
+.logo{
+	margin-bottom: -60px;
+}
+
+h1{
+	margin-right: -10px;
+	margin-bottom: -10px;
+	font-family: Poppins, Helvetica, Arial, "sans serif";
+	font-weight: 600;
+	font-size: 32pt;
+}
+
+h3{
+	font-family: "Open Sans", Helvetica, Arial, "sans serif";
+	font-weight: 400;
+	font-size: 14pt;
+	color: #515259;
+	padding-left: 2px;
+	margin-top: 0px;
+}
+
+.line {
+	width: 300px;
+	height: 5px;
+	margin: 0px 0px 0px 2px;
+}
+
+nav  {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 50px;
+}
+
+nav a {
+	margin-right: 20px;
+	font-family: "Open Sans", Helvetica, Arial, "sans serif";
+	font-weight: 400;
+	font-size: 16pt;
+	color: #515259;
+}
+
+img {
+	width: 40%;
+	height: 40%;
+	margin-right: 50px;
+}
+
+
+article {
+	margin-right: 20px;
+}
+
+section {
+	display: flex;
+	width: 80%;
+	margin: 50px auto;
+}
+
+h2 {
+	font-family: "Poppins", Helvetica, Arial, "sans serif";
+	font-weight: 600;
+	font-size: 24pt;
+	margin-bottom: -10px;
+}
+
+p {
+	font-family: "Open Sans", Helvetica, Arial, "sans serif";
+	font-weight: 400;
+	font-size: 16pt;
+	line-height: 24pt;
+}
+
+ol {
+	font-family: "Open Sans", Helvetica, Arial, "sans serif";
+	font-weight: 400;
+	font-size: 16pt;
+	list-style: none;
+ 	counter-reset: hobbies;
+ 	padding: 0px 5px 0px 0px;
+ 	line-height: 30px;
+}
+
+ol li {
+  counter-increment: hobbies;
+}
+
+ol li::before {
+  content: counter(hobbies) ". ";
+  color: #00AEEF;
+  font-weight: bold;
+}
+
+ul {
+	font-family: "Open Sans", Helvetica, Arial, "sans serif";
+	font-weight: 400;
+	font-size: 16pt;
+	list-style-type: none;
+	padding: 0px 5px 0px 0px;
+	line-height: 30px;
+}
+
+.links a:link    { 
+	color: #00AEEF; 
+	text-decoration: none;
+ }
+
+.links a:visited {
+	color: #00AEEF; 
+	text-decoration: none;
+}
+
+.links a:hover { 
+	color: #F59721; 
+	text-decoration: none;
+}
+
+.footer-links:active { 
+	color: #F59721;
+	text-decoration: none;
+	 }
+.footer-links:link    { 
+	color: #ffffff; 
+	text-decoration: none;
+	font-weight: bold;
+ }
+
+.footer-links:visited {
+	color: #ffffff; 
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.footer-links:hover { 
+	color: #ffffff; 
+	text-decoration: underline;
+	text-decoration-color: #F59721;
+	font-weight: bold;
+}
+
+.footer-links:active { 
+	color: #ffffff;
+	text-decoration: underline;
+	text-decoration-color: #F59721;
+	font-weight: bold;
+	 }
+
+footer {
+	display: flex;
+  	flex-direction: : row;
+  	padding: 30px 30px 20px 50px;
+  	color: #ffffff;
+  	background: linear-gradient(110deg, #00AEEF 60%, #F59721 60%);
+  	border-top: 1px solid #e5e5e5;
 }
