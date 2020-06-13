@@ -1,2 +1,2 @@
 # portfolio website
-##this is my first website I've ever made. 
+This is my first website I've ever made. 
