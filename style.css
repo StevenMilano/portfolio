@@ -1,26 +1,28 @@
 /*Two fonts from google Fonts, Poppins for headers, and Open sans for the body */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap');
-
+/* When clicking the Nav bar it makes the trasition smooth and not jarring*/
 html{
 	scroll-behavior: smooth;
 }
-
+/* Gives the top most element a margin so it dosen't hug the edges of the page.*/
 header {
 	margin: 20px 0 10px 50px;
 }
-
+/*Aligns the Nav bar to the name horizontally */
 .logo{
 	margin-bottom: -60px;
 }
-
+/*Headers are set in Poppins bold
+brings the line and h3 closer to the h1 */
 h1{
-	margin-right: -10px;
 	margin-bottom: -10px;
 	font-family: Poppins, Helvetica, Arial, "sans serif";
 	font-weight: 600;
 	font-size: 32pt;
 }
-
+/*Everything else is set to Open sans regular
+Color to a dark grey to help bring Heiarchy
+padding left bisually aligns the 'S' with the other "s" */
 h3{
 	font-family: "Open Sans", Helvetica, Arial, "sans serif";
 	font-weight: 400;
@@ -29,19 +31,19 @@ h3{
 	padding-left: 2px;
 	margin-top: 0px;
 }
-
+/*Set the width and height of the .png as well as visually aligning it with the S in Steven*/
 .line {
 	width: 300px;
 	height: 5px;
-	margin: 0px 0px 0px 2px;
+	margin-left: 2px;
 }
-
+/*Puts the nav bar on the right side of the page*/
 nav  {
 	display: flex;
 	justify-content: flex-end;
 	margin-right: 50px;
 }
-
+/*Sets font standards and gives each navigation element room to breath */
 nav a {
 	margin-right: 20px;
 	font-family: "Open Sans", Helvetica, Arial, "sans serif";
@@ -49,7 +51,8 @@ nav a {
 	font-size: 16pt;
 	color: #515259;
 }
-
+//*img, article, and section all help place the elements into the middle of the page,
+as well as setting the margins between each element within*/
 img {
 	width: 40%;
 	height: 40%;
@@ -66,12 +69,13 @@ section {
 	width: 80%;
 	margin: 50px auto;
 }
-
+/*Styles the font for the text*/
 h2 {
 	font-family: "Poppins", Helvetica, Arial, "sans serif";
 	font-weight: 600;
 	font-size: 24pt;
 	margin-bottom: -10px;
+	text-align: left;
 }
 
 p {
@@ -79,8 +83,10 @@ p {
 	font-weight: 400;
 	font-size: 16pt;
 	line-height: 24pt;
+	text-align: left;
 }
-
+/*Changes the style of the ol so that it can bring some more attention to it,
+and room to breath*/
 ol {
 	font-family: "Open Sans", Helvetica, Arial, "sans serif";
 	font-weight: 400;
@@ -100,7 +106,7 @@ ol li::before {
   color: #00AEEF;
   font-weight: bold;
 }
-
+/*General styling*/
 ul {
 	font-family: "Open Sans", Helvetica, Arial, "sans serif";
 	font-weight: 400;
@@ -109,7 +115,15 @@ ul {
 	padding: 0px 5px 0px 0px;
 	line-height: 30px;
 }
-
+/*Makes the rules have the same styling as the line at the top of the page.*/
+hr{
+	width: 1200px;
+	height: 2px;
+	background: linear-gradient(110deg, #00AEEF 60%, #F59721 60%);
+	border: none;
+}
+/*Styles the links with the colors of the rule at the top of the page.
+These style the nav bar and the contact links*/
 .links a:link    { 
 	color: #00AEEF; 
 	text-decoration: none;
@@ -129,6 +143,8 @@ ul {
 	color: #F59721;
 	text-decoration: none;
 	 }
+/*These are for the links in the footer which need differnt styling for people who
+are hard of seeing. This ups the contrast*/
 .footer-links:link    { 
 	color: #ffffff; 
 	text-decoration: none;
@@ -154,7 +170,8 @@ ul {
 	text-decoration-color: #F59721;
 	font-weight: bold;
 	 }
-
+/*Styles the footer into it's own section as well as giving it the color to match
+the rule at the top of the page.*/
 footer {
 	display: flex;
   	flex-direction: : row;
