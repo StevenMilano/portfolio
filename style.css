@@ -51,9 +51,9 @@ nav a {
 	font-size: 16pt;
 	color: #515259;
 }
-//*img, article, and section all help place the elements into the middle of the page,
+/*img, article, and section all help place the elements into the middle of the page,
 as well as setting the margins between each element within*/
-img {
+img{
 	width: 40%;
 	height: 40%;
 	margin-right: 50px;
