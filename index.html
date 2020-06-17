@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
 
@@ -14,13 +16,17 @@
     <!-- container with h1, underline, and h3 in it.-->
     <div class="logo">
       <h1>Steven Milano</h1>
-      <img class="line" src="images/portfolio-underline.png" alt="blue and orange underline.">
+      <div class="line">
+        <img class="line" src="images/portfolio-underline.png" alt="blue and orange underline.">
+      </div>
+     
       <h3>software developer</h3>
     </div>
     <!-- nav bar. Linked to each section-->
     <nav class="links">
       <a href="#intro">Intro</a>
       <a href="#about-me">About</a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
 
@@ -29,14 +35,16 @@
   <main>
     <!-- Each section holds an article wrapper and within that an h2, p, and img-->
     <section>
-      <img src="images/tintypePortrait.jpg" alt="Portrait of myself and my partner, taken with a tintype."/>
+      <div class="images">
+        <img src="images/tintypePortrait.jpg" alt="Portrait of myself and my partner, taken with a tintype."/>
+      </div>
+
       <article>
         <h2 id="intro">Hello! I'm Steven Milano</h2>
 
         <p>I am a software developer living in Columbia, Maryland</p>
 
         <p>I went to school for graphic design and after a few years of freelance work I started to get into software development.</p>
-
       </article>
     </section>
 
@@ -44,8 +52,10 @@
 
     <!-- Each section holds an article wrapper and within that an h2, p, and img-->
     <section> 
+      <div class="images">
+        <img src="images/turtleRock.jpeg" alt="Me climbing in Horse Pens 40 Alabama. Shot on film"/>
+      </div>
 
-      <img src="images/turtleRock.jpeg" alt="Me climbing in Horse Pens 40 Alabama. Shot on film"/>
       <article>
         <h2 id="about-me">About me</h2>
       
@@ -60,6 +70,7 @@
           <li>Cooking</li>
           <li>Fermentation</li>
           <li>Photography</li>
+          <li>Gardening</li>
         </ol>
 
       </article>
@@ -67,9 +78,48 @@
 
     <hr>
 
+    <section class="project-section" id="projects">
+      <div class="project-items">
+        <img class="project-images" src="images/turtleRock.jpeg" alt="Project 1">
+        <article>
+          <h2>Project 1</h2>
+          <p>This would be the description of project 1. </p>
+        </article>
+      </div>
+
+       <div class="project-items">
+        <img class="project-images" src="images/turtleRock.jpeg" alt="Project 2">
+        <article>
+          <h2>Project 2</h2>
+          <p>This would be the description of project 2. </p>
+        </article>
+      </div>
+
+       <div class="project-items">
+        <img class="project-images" src="images/turtleRock.jpeg" alt="Project 3">
+        <article>
+          <h2>Project 3</h2>
+          <p>This would be the description of project 3. </p>
+        </article>
+      </div>
+
+       <div class="project-items">
+        <img class="project-images" src="images/turtleRock.jpeg" alt="Project 4">
+        <article>
+          <h2>Project 4</h2>
+          <p>This would be the description of project 4. </p>
+        </article>
+      </div>
+    </section>
+
+    <hr>
+
     <!-- Each section holds an article wrapper and within that an h2, p, and img-->
     <section>
-      <img class="images" src="images/turtleRockSent.jpeg" alt="Me smiling at the top of a rock climb. Shot on film.">
+      <div class="images">
+       <img src="images/turtleRockSent.jpeg" alt="Me smiling at the top of a rock climb. Shot on film.">
+      </div>
+
       <article>
         <h2 id="contact">Contact me!</h2>
         <p>I'd love to hear form you. Please feel free to contact me or follow me:</p>
@@ -78,6 +128,7 @@
           <li><a href="https://www.linkedin.com/in/steven-milano-64a78887/" target="_blank">Linkedin</a></li>
           <li><a href="https://github.com/StevenMilano" target="_blank">GitHub</a></li>
           <li><a href="https://www.instagram.com/steven_milano1/" target="_blank">Instagram</a></li>
+          <li>milanosteven@gmail.com</li>
         </ul>
       </article>
     </section>
