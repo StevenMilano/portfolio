@@ -53,8 +53,7 @@ nav a {
 	font-size: 16pt;
 	color: #515259;
 }
-/*img, article, and section all help place the elements into the middle of the page,
-as well as setting the margins between each element within*/
+/*Setting everything in a column and down the center of the page for mobile*/
 section {
 	display: flex;
 	flex-direction: column;
@@ -182,7 +181,9 @@ footer {
   	border-top: 1px solid #e5e5e5;
 }
 
-@media all and (min-width: 800px){
+/*changes design from a column based design to a row based design when on desktop*/
+
+@media all and (min-width: 1000px) {
 
 	header {
 	margin: 20px 0 10px 50px;
@@ -210,8 +211,8 @@ nav  {
 }
 
 img{
-	width: 90%;
-	height: 90%;
+	width: 50%;
+	height: 50%;
 	margin-right: 50px;
 }
 
@@ -231,6 +232,7 @@ section {
 	display: grid;
 	grid-template-columns: 1fr 1fr ;
 	grid-template-rows: 1fr 1fr;
+	text-align: center;
 }
 
 .project-items-row1 {
