@@ -1,6 +1,18 @@
 /*Two fonts from google Fonts, Poppins for headers, and Open sans for the body */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap');
 /* When clicking the Nav bar it makes the trasition smooth and not jarring*/
+.screen-reader-text { 
+   border:0;   
+   clip: rect(1px, 1px, 1px, 1px); 
+   clip-path: inset(50%);
+   height: 1px; 
+   margin: -1px;
+   width: 1px; 
+   overflow: hidden; 
+   position: absolute !important;
+   word-wrap:normal !important;
+}
+
 html{
 	scroll-behavior: smooth;
 }
@@ -54,20 +66,22 @@ nav a {
 	color: #515259;
 }
 /*Setting everything in a column and down the center of the page for mobile*/
-section {
+main {
+	padding: 20px 20px;
+}
+
+main img {
+	width: 100%;
+}
+
+.group {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 }
 
-img{
-	width: 90%;
-	margin: 10px 0;
-}
-
-article {
-	width: 90%;
+.item {
+	flex: 1;
+	margin: 20px;
 }
 
 /*Styles the font for the text*/
@@ -116,12 +130,49 @@ ul {
 }
 /*Makes the rules have the same styling as the line at the top of the page.*/
 hr{
-	width: 90%;
+	width: 100%;
 	height: 2px;
 	margin: 20px auto;
 	background: linear-gradient(110deg, #00AEEF 60%, #F59721 60%);
 	border: none;
 }
+
+form {
+	margin-left: -20px;
+}
+
+input[type=text] {
+	padding: 15px 10px;
+	margin: 10px 0;
+	font-family: "Open Sans", Helvetica, Arial, "sans serif";
+	font-size: 16pt;
+}
+
+form input,
+form textarea {
+	width: 100%
+}
+
+form textarea {
+	font-family: "Open Sans", Helvetica, Arial, "sans serif";
+	font-size: 16pt;
+}
+
+button {
+	border: none;
+	border-radius: 10px;
+	background-color: #00AEEF;
+	color: white;
+	padding: 15px 50px;
+	margin-top: 10px;
+	font-family: "Open Sans", Helvetica, Arial, "sans serif";
+	font-size: 16pt;
+}
+
+button:hover {
+	background-color: #F59721
+}
+
 /*Styles the links with the colors of the rule at the top of the page.
 These style the nav bar and the contact links*/
 .links a:link    { 
@@ -185,66 +236,40 @@ footer {
 
 @media all and (min-width: 1000px) {
 
-	header {
-	margin: 20px 0 10px 50px;
-}
+	  header {
+		margin: 20px 0 10px 50px;
+	}
 
-.logo{
-	display: flex;
-	align-items: flex-start;
-	margin-bottom: -60px;
-}
+	.logo{
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: -60px;
+	}
 
-h3{
-	padding-left: 2px;
-}
+	h3{
+		padding-left: 2px;
+	}
 
-.line {
-	align-self: flex-start;
-	margin-left: 1px;
-}
+	.line {
+		align-self: flex-start;
+		margin-left: 1px;
+	}
 
-nav  {
-	display: flex;
-	justify-content: flex-end;
-	margin-right: 50px;
-}
+	nav  {
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 50px;
+	}
 
-img{
-	width: 50%;
-	height: 50%;
-	margin-right: 50px;
-}
+	section {
+	    padding: 0 10%;
+	  }
 
+	.group {
+	    flex-direction: row;
+	  }
 
-article {
-	margin-right: 20px;
-}
-
-section {
-	display: flex;
-	flex-direction: row;
-	width: 80%;
-	margin: 50px auto;
-}
-
-.project-section {
-	display: grid;
-	grid-template-columns: 1fr 1fr ;
-	grid-template-rows: 1fr 1fr;
-	text-align: center;
-}
-
-.project-items-row1 {
-	grid-row-start: 1;
-	grid-column-start: 1;
-}
-
-.project-items-row2{
-	grid-row-start: 1;
-	grid-column-start: 2;
-}
-
-.project-images {
-	width: 60%;
+	  hr {
+	  	width: 85%;
+	  }
 }
